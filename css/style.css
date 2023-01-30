@@ -295,11 +295,9 @@ main {
 
 
 /* --- main content --- */
-/* .MainContent {
-  position: relative;
-  width: max-content;
-  margin: auto;
-} */
+.MainContent {
+  min-height: 1000px;
+}
 
 /* --- footer --- */
 .Footer {
