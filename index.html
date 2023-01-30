@@ -1,9 +1,588 @@
-<!doctype html>
-<html>
-    <head>
-        <title>Hello world ! </title>
-    </head>
-    <body>
-           Hello World
-    </body>
-</html>
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCLin Personal Website</title>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- main block-->
+    <main>
+
+        <!-- personal information aside block -->
+        <aside class="AsideBlock"  Data-AsideBar>
+            <!-- brief information -->
+            <div class="AsideInfo">
+                <figure class="AvatarBox">
+                    <img src="images/icon/coming.png" alt="Bo-Cyuan Lin" width="80">
+                </figure>
+                <div class="AsideInfoContent">
+                    <h1 class="name">Bo-Cyuan Lin</h1>
+                    <p class="tag"> MS Student </p>
+                </div>
+
+                <button class="ContactMore" Data-AsideBar-Button>
+                    <span>More</span>
+                    <!-- <img src="images/icon/down.png" alt="down" width="20"> -->
+                </button>
+            </div>
+
+            <!-- contact information -->
+            <div class="AsideContact">
+
+              <div class="SeparatingLine"></div>
+
+              <ul class="ContactList">
+                <li class="ContactItem">
+                  <div class="IconBox">
+                    <img src="images/icon/email.png" alt="email"></img>
+                  </div>
+                  <div class="ContactInfo">
+                    <p class="ContactTitle">Email</p>
+                    <a href="mailto:bclin1833@gmail.com" class="ContactText">bclin1833@gmail.com</a>
+                  </div>
+                </li>
+                <li class="ContactItem">
+                  <div class="IconBox">
+                    <img src="images/icon/calendar.png" alt="calendar"></img>
+                  </div>
+                  <div class="ContactInfo">
+                    <p class="ContactTitle">Birthday</p>
+                    <time datetime="1998-11-07" class="ContactText">November 07, 1998</time>
+                  </div>
+                </li>
+                <li class="ContactItem">
+                  <div class="IconBox">
+                    <img src="images/icon/location.png" alt="location"></img>
+                  </div>
+                  <div class="ContactInfo">
+                    <p class="ContactTitle">Location</p>
+                    <address class="ContactText">Taoyuan, Taiwan</address>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="SeparatingLine"></div>
+              <ul class="SocialList">
+                <li class="SocialItem">
+                  <a href="#" class="fa fa-github" style="font-size: 30px;"></a>
+                </li>
+                <li class="SocialItem">
+                  <a href="#" class="fa fa-facebook" style="font-size: 30px;"></a>
+                </li>
+              </ul>
+        
+            </div>
+        </aside>
+
+        <!-- main content -->
+        <div class="MainContent">
+
+            <!-- navigation bar -->
+            <nav class="Navbar">
+
+                <ul class="NavbarList">
+        
+                  <li class="NavbarItem">
+                    <button class="NavbarLink active" Data-Page-Link>About</button>
+                  </li>
+        
+                  <li class="NavbarItem">
+                    <button class="NavbarLink" Data-Page-Link>Projects</button>
+                  </li>
+        
+                  <li class="NavbarItem">
+                    <button class="NavbarLink" Data-Page-Link>Blog</button>
+                  </li>
+        
+                </ul>
+        
+            </nav>
+
+            <!-- about -->
+            <article class="About active" Data-Page="about">
+
+                <header>
+                  <h1 class="h1 ArticleTitle">About Me</h1>
+                </header>
+        
+                <section>
+                  <p class="ArticleText">
+                    I am a M.S. student at Institute of Data Science and Engineering, Department of Computer Science, National Yang Ming Chiao Tung University. 
+                    I have experience in deep learning, big data, machine learning, computer animation, computer graphics, 3D programming, image processing, 
+                    reinforcement learning, and natural language processing. I am a good team player and adaptable to any new challenge.
+                  </p>
+                  <p class="ArticleText">
+                    I currently working on the research about deep reinforncement based microscopic traffic simulation.
+                  </p>
+                </section>
+
+                <!-- education -->
+                <section class="Timeline">
+            
+                    <div class="TitleWrapper">
+                      <div class="IconBox">
+                        <img src="images/icon/education.png" alt="education"></img>
+                      </div>
+                      <h2 class="h2 ArticleSubTitle">Education</h2>
+                    </div>
+          
+                    <ol class="TimelineList">
+                        
+                      <li class="TimelineItem">
+                        <div class="ArticleBox"> 
+                            <h3 class="h3 TimelineItemTitle">M.S., Institute of Data Science and Engineering, Department of Computer Science, National Yang Ming Chiao Tung University, Taiwan. </h3>
+          
+                            <span>2021/09 - Present</span>
+            
+                            <!-- <p class="ArticleText"></p> -->
+                        </div>
+                      </li>
+
+                      <li class="TimelineItem">
+                        <div class="ArticleBox"> 
+                            <h3 class="h3 TimelineItemTitle">B.S., Department of Mathematics, National Central University, Taiwan.</h3>
+          
+                            <span>2017/09 - 2021/06</span>
+            
+                            <!-- <p class="ArticleText"></p> -->
+                        </div>
+                      </li>
+
+                      <li class="TimelineItem">
+                        <div class="ArticleBox"> 
+                            <h3 class="h3 TimelineItemTitle">Taoyuan Municipal Ping Jen Senior High School, Taiwan</h3>
+          
+                            <span>2014/09 - 2017/06</span>
+            
+                            <!-- <p class="ArticleText"></p> -->
+                        </div>
+                      </li>
+          
+                    </ol>
+          
+                </section>
+
+                <!-- experience -->
+
+                <section class="Timeline">
+            
+                  <div class="TitleWrapper">
+                    <div class="IconBox">
+                      <img src="images/icon/experience.png" alt="experience"></img>
+                    </div>
+                    <h2 class="h2 ArticleSubTitle">Experience</h2>
+                  </div>
+          
+                    <ol class="TimelineList">
+          
+                        <li class="TimelineItem">
+                            <div class="ArticleBox"> 
+                                <h3 class="h3 TimelineItemTitle">NCTS-USRP: Mathematical Modelling and Data Prediction in Infectious Diseases Spread and COVID-19, NCTS, Taiwan.</h3>
+              
+                                <span>2020/07 - 2020/08</span>
+
+                                <!-- <p class="ArticleText"></p> -->
+                            </div>
+                        </li>
+
+                        <li class="TimelineItem">
+                            <div class="ArticleBox"> 
+                                <h3 class="h3 TimelineItemTitle">College Student Research [Project Number: 109-2813-C-008-046-M], MOST, Taiwan.</h3>
+              
+                                <span>2020/06 - 2021/02</span>
+                
+                                 <!-- <p class="ArticleText"></p> -->
+                            </div>
+                        </li>
+
+                        <li class="TimelineItem">
+                            <div class="ArticleBox"> 
+                                <h3 class="h3 TimelineItemTitle">Image Processing Project TA, Department of Mathematics, National Central University, Taiwan. </h3>
+              
+                                <span>2019/09 - 2020/01</span>
+                
+                                 <!-- <p class="ArticleText"></p> -->
+                            </div>
+                        </li>
+    
+                          
+    
+                    </ol>
+          
+                </section>
+
+                <!-- skill -->
+                <section class="Skill">
+
+                    <h2 class="h2 ArticleTitle">My Skills</h2>
+
+                    <div class="SkillItem">
+                      <div class="ArticleBox">
+                        <h3 class="h3 TimelineItemTitle"> Programming Language </h3>
+                        <p class="ArticleText">
+                        Python、C/C++、C#、Matlab、HTML、CSS、JavaScript
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div class="SkillItem">
+                      <div class="ArticleBox">
+                        <h3 class="h3 TimelineItemTitle"> Game Engine </h3>
+                        <p class="ArticleText">
+                        Unity、OGRE
+                        </p>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="SkillItem">
+                      <div class="ArticleBox">
+                        <h3 class="h3 TimelineItemTitle"> Machine Lrearning & Deep Learning </h3>
+                        <p class="ArticleText">
+                        TensorFlow、Pytorch、Keras、Scikit Learn
+                        </p>
+                      </div>
+                    </div>
+                    
+
+                    <div class="SkillItem">
+                      <div class="ArticleBox">
+                        <h3 class="h3 TimelineItemTitle"> Data Science </h3>
+                        <p class="ArticleText">
+                        PySpark、Hadoop、Pandas、Numpy、Matplotlib
+                        </p>
+                      </div>
+                    </div>
+                    
+
+                    <div class="SkillItem">
+                      <div class="ArticleBox">
+                        <h3 class="h3 TimelineItemTitle"> Image Processing </h3>
+                        <p class="ArticleText">
+                        OpenCV
+                        </p>
+                      </div>
+                    </div>
+                    
+          
+                </section>
+
+            </article>
+
+            <!-- projects -->
+
+            <article class="ProjectBlock" Data-Page="projects">
+
+                <header>
+                  <h2 class="h2 ArticleTitle">Project</h2>
+                </header>
+        
+                <section class="Project">
+        
+                  <ul class="FilterList">
+        
+                    <li class="FilterItem">
+                      <button class="active" Data-Filter-Button-Project>All</button>
+                    </li>
+        
+                    <li class="FilterItem">
+                      <button Data-Filter-Button-Project>3D Game Programming</button>
+                    </li>
+        
+                    <li class="FilterItem">
+                      <button Data-Filter-Button-Project>Simulation</button>
+                    </li>
+        
+                    <li class="FilterItem">
+                      <button Data-Filter-Button-Project>Data Science</button>
+                    </li>
+        
+                  </ul>
+        
+                  <div class="FilterSelectBox">
+        
+                    <button class="FilterSelect" Data-Select-Filter-Project>
+        
+                      <div class="FilterSelectValue" Data-Select-Filter-Value-Project>Select Category</div>
+        
+                      <div class="Icon">
+                        <div class="IconBox">
+                          <img src="images/icon/down.png" alt="down"></img>
+                        </div>
+                      </div>
+        
+                    </button>
+        
+                    <ul class="FilterSelectList">
+        
+                      <li class="FilterSelectItem">
+                        <button Data-Select-Item-Project>All</button>
+                      </li>
+        
+                      <li class="FilterSelectItem">
+                        <button Data-Select-Item-Project>3D Game Programming</button>
+                      </li>
+        
+                      <li class="FilterSelectItem">
+                        <button Data-Select-Item-Project>Simulation</button>
+                      </li>
+        
+                      <li class="FilterSelectItem">
+                        <button Data-Select-Item-Project>Data Science</button>
+                      </li>
+        
+                    </ul>
+        
+                  </div>
+        
+                  <ul class="ProjectList">
+        
+                    <li class="ProjectItem  active" Data-Filter-Item-Project data-category="3d game programming">
+                      <a href="#">
+        
+                        <figure class="ProjectImage">
+                          <div class="ProjectItemBox">
+                            <div class="IconBox">
+                              <img src="images/icon/more.png" alt="more"></img>
+                            </div>
+                          </div>
+        
+                          <img src="images/icon/coming.png" alt="3D Game Programming" loading="lazy">
+                        </figure>
+        
+                        <h3 class="ProjectTitle">3D Game Programming</h3>
+        
+                        <p class="ProjectCategory">3D Game Programming</p>
+        
+                      </a>
+                    </li>
+        
+                    <li class="ProjectItem  active" Data-Filter-Item-Project data-category="simulation">
+                      <a href="#">
+        
+                        <figure class="ProjectImage">
+                          <div class="ProjectItemBox">
+                            <div class="IconBox">
+                              <img src="images/icon/more.png" alt="more"></img>
+                            </div>
+                          </div>
+        
+                          <img src="images/icon/coming.png" alt="Simulation" loading="lazy">
+                        </figure>
+        
+                        <h3 class="ProjectTitle">Simulation</h3>
+        
+                        <p class="ProjectCategory">Simulation</p>
+        
+                      </a>
+                    </li>
+        
+                    <li class="ProjectItem  active" Data-Filter-Item-Project data-category="data science">
+                      <a href="#">
+        
+                        <figure class="ProjectImage">
+                          <div class="ProjectItemBox">
+                            <div class="IconBox">
+                              <img src="images/icon/more.png" alt="more"></img>
+                            </div>
+                          </div>
+        
+                          <img src="images/icon/coming.png" alt="Data Science" loading="lazy">
+                        </figure>
+        
+                        <h3 class="ProjectTitle">Data Science</h3>
+        
+                        <p class="ProjectCategory">Data Science</p>
+        
+                      </a>
+                    </li>
+        
+        
+                  </ul>
+        
+                </section>
+        
+            </article>
+
+            <!-- blog -->
+
+            <article class="BlogBlock" Data-Page="blog">
+
+                <header>
+                  <h2 class="h2 ArticleTitle">Blog</h2>
+                </header>
+        
+                <section class="Blog">
+
+                  <ul class="FilterList">
+        
+                    <li class="FilterItem">
+                      <button class="active" Data-Filter-Button-Blog>All</button>
+                    </li>
+        
+                    <li class="FilterItem">
+                      <button Data-Filter-Button-Blog>Leetcode</button>
+                    </li>
+        
+                    <li class="FilterItem">
+                      <button Data-Filter-Button-Blog>OpenLab</button>
+                    </li>
+        
+                    <li class="FilterItem">
+                      <button Data-Filter-Button-Blog>NCTS</button>
+                    </li>
+        
+                  </ul>
+        
+                  <div class="FilterSelectBox">
+        
+                    <button class="FilterSelect" Data-Select-Filter-Blog>
+        
+                      <div class="FilterSelectValue" Data-Select-Filter-Value-Blog>Select category</div>
+        
+                      <div class="Icon">
+                        <div class="IconBox">
+                          <img src="images/icon/down.png" alt="down"></img>
+                        </div>
+                      </div>
+        
+                    </button>
+        
+                    <ul class="FilterSelectList">
+        
+                      <li class="FilterSelectItem">
+                        <button Data-Select-Item-Blog>All</button>
+                      </li>
+        
+                      <li class="FilterSelectItem">
+                        <button Data-Select-Item-Blog>Leetcode</button>
+                      </li>
+        
+                      <li class="FilterSelectItem">
+                        <button Data-Select-Item-Blog>OpenLab</button>
+                      </li>
+        
+                      <li class="FilterSelectItem">
+                        <button Data-Select-Item-Blog>NCTS</button>
+                      </li>
+        
+                    </ul>
+        
+                  </div>
+        
+                  <ul class="BlogList">
+
+        
+                    <li class="BlogItem  active" Data-Filter-Item-Blog data-category="leetcode">
+                      <a href="#">
+                        <figure class="BlogImage">
+                          <div class="BlogItemBox">
+                            <div class="IconBox">
+                              <img src="images/icon/more.png" alt="more"></img>
+                            </div>
+                          </div>
+                          <img src="images/icon/coming.png" alt="Conference" loading="lazy">
+                        </figure>
+
+                        <div class="BlogContent">
+                          <div class="BlogMeta">
+                            <p class="BlogCategory">Leetcode</p>
+                            <span class="dot"></span>
+                            <time datetime="2022-02-23">XXX XX, 2022</time>
+                          </div>
+                          <h3 class="h3 BlogItemTitle">Leetcode</h3>
+                          <p class="ArticleText">
+                            Coming Soon.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+        
+                    <li class="BlogItem  active" Data-Filter-Item-Blog data-category="openlab">
+                      <a href="#">
+        
+                        <figure class="BlogImage">
+                          <div class="BlogItemBox">
+                            <div class="IconBox">
+                              <img src="images/icon/more.png" alt="more"></img>
+                            </div>
+                          </div>
+                          <img src="images/icon/coming.png" alt="OpenLab" loading="lazy">
+                        </figure>
+        
+                        <div class="BlogContent">
+        
+                          <div class="BlogMeta">
+                            <p class="BlogCategory">OpenLab</p>
+        
+                            <span class="dot"></span>
+        
+                            <time datetime="2022-02-23">XXX XX, 2022</time>
+                          </div>
+        
+                          <h3 class="h3 BlogItemTitle">OpenLab</h3>
+        
+                          <p class="ArticleText">
+                            Coming Soon.
+                          </p>
+        
+                        </div>
+        
+                      </a>
+                    </li>
+        
+                    <li class="BlogItem  active" Data-Filter-Item-Blog data-category="ncts">
+                      <a href="#">
+        
+                        <figure class="BlogImage">
+                          <div class="BlogItemBox">
+                            <div class="IconBox">
+                              <img src="images/icon/more.png" alt="more"></img>
+                            </div>
+                          </div>
+                          <img src="images/icon/coming.png" alt="NCTS-USRP" loading="lazy">
+                        </figure>
+        
+                        <div class="BlogContent">
+        
+                          <div class="BlogMeta">
+                            <p class="BlogCategory">NCTS-USRP</p>
+        
+                            <span class="dot"></span>
+        
+                            <time datetime="2022-02-23">XXX XX, 2022</time>
+                          </div>
+        
+                          <h3 class="h3 BlogItemTitle">NCTS-USRP</h3>
+        
+                          <p class="ArticleText">
+                            Coming Soon.
+                          </p>
+        
+                        </div>
+        
+                      </a>
+                    </li>
+        
+                  </ul>
+        
+                </section>
+        
+              </article>
+              
+        </div>
+    </main>
+
+    <footer class="Footer">
+      <p> &copy; 2023 All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
